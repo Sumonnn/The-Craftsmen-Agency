@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------p1---------------------------------- */
+.page1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+.page1 .page1-top {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page1 .page1-top>h2 {
+    font-size: 3.8vw;
+    color: #ffffff;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.page1 .page1-top>h2::before {
+    content: "THE";
+    font-size: 1.3vw;
+    position: absolute;
+    top: 0.2vw;
+    left: 2.9vw;
+}
+
+.page1 .page1-bottom {
+    width: 100%;
+    height: calc(100% - 40%);
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.page1 .page1-bottom .page1-bottom-left {
+    width: 50%;
+    height: 100%;
+    border-radius: 70px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease-out;
+    background-color: #2900E8;
+}
+
+.page1 .page1-bottom .page1-bottom-left:hover {
+    scale: 0.98;
+}
+
+.page1 .page1-bottom .page1-bottom-right {
+    width: 50%;
+    height: 100%;
+}
+
+.page1-bottom-right-top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 5px;
+    padding: 1px;
+    padding-bottom: 4px;
+}
+
+.page1-bottom-right-top-left {
+    width: 50%;
+    height: 100%;
+    border-radius: 70px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom: 2.5vw;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    transition: 0.3s ease-out;
+}
+
+.page1-bottom-right-top-left:hover {
+    scale: 0.96;
+}
+
+.page1-bottom-right-top-left:hover .page1-bottom-right-top-left-rotate {
+    display: block;
+}
+
+.page1-bottom-right-top-left:hover p {
+    display: none;
+}
+
+.page1-bottom-right-top-left:hover i {
+    display: none;
+}
+
+.page1-bottom-right-top-left-rotate {
+    position: absolute;
+    top: 40%;
+    white-space: nowrap;
+    animation-name: texttransfrom;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    display: none;
+}
+
+.page1-bottom-right-top-left-rotate>h2 {
+    display: inline-block;
+    font-size: 3vw;
+}
+
+.page1-bottom-right-top-left>p {
+    font-weight: 600;
+    font-size: 1.3vw;
+}
+
+.page1-bottom-right-top-left>i {
+    font-size: 1.5vw;
+}
+
+.page1-bottom-right-top-right {
+    width: 50%;
+    height: 100%;
+    border-radius: 70px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-bottom: 3vw;
+    transition: 0.3s ease-out;
+    background-color: #1B1B1F;
+}
+
+.page1-bottom-right-top-right:hover {
+    scale: 0.96;
+}
+
+.page1-bottom-right-top-right:hover p {
+    display: none;
+}
+
+.page1-bottom-right-top-right:hover i {
+    display: none;
+}
+
+.page1-bottom-right-top-right:hover .page1-bottom-right-top-right-rotate {
+    display: block;
+}
+
+.page1-bottom-right-top-right-rotate {
+    position: absolute;
+    top: 40%;
+    white-space: nowrap;
+    animation-name: texttransfrom;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    display: none;
+}
+
+.page1-bottom-right-top-right-rotate>h2 {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 3vw;
+}
+
+.page1-bottom-right-top-right>p {
+    color: #FFFFFF;
+    font-size: 1.4vw;
+}
+
+.page1-bottom-right-top-right>i {
+    color: #FFFFFF;
+    font-size: 1.5vw;
+}
+
+.page1-bottom-right-bottom {
+    width: 100%;
+    height: 50%;
+    border-radius: 70px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+    padding: 2vw 5vw;
+    background-color: #FFF480;
+    transition: 0.3s ease-out;
+}
+
+.page1-bottom-right-bottom:hover {
+    scale: 0.96;
+}
+
+.page1-bottom-right-bottom:hover p {
+    display: none;
+}
+
+.page1-bottom-right-bottom:hover i {
+    display: none;
+}
+
+.page1-bottom-right-bottom:hover .page1-bottom-right-bottom-rotate {
+    display: block;
+}
+
+.page1-bottom-right-bottom-rotate {
+    position: absolute;
+    white-space: nowrap;
+    top: 40%;
+    animation-name: texttransfrom;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    display: none;
+}
+
+.page1-bottom-right-bottom-rotate h2 {
+    font-size: 3.5vw;
+    display: inline-block;
+}
+
+.page1-bottom-right-bottom>p {
+    font-weight: 600;
+    font-size: 1.3vw;
+}
+
+.page1-bottom-right-bottom>i {
+    font-size: 1.5vw;
+}
+
+@keyframes texttransfrom {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+
+    }
+
+}
