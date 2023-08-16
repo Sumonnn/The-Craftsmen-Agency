@@ -186,3 +186,24 @@ page3TL4
 }
 page3Animation();
 
+function page5Animation(){
+    gsap.to(".page5-circle1",{
+        transform:`translateX(${0}%)`,
+        scrollTrigger:{
+            scroller:".main",
+            trigger:".page5",
+            scrub:2,
+            // markers:true,
+        }
+    })
+    gsap.to(".page5-circle2",{
+        transform:`translateX(${-300}%)`,
+        scrollTrigger:{
+            scroller:".main",
+            trigger:".page5",
+            scrub:2,
+            // markers:true,
+        }
+    })
+}
+page5Animation();
